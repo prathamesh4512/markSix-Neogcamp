@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+:root {
+  --background-color: #fcd34d;
+  --font-color: #334155;
+}
+
+body {
+  font-family: "Courgette", cursive;
+  margin: 0;
+  color: var(--font-color);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--background-color);
+  font-size: 2rem;
+}
+
+main {
+  width: 60%;
+  margin: auto;
+}
+
+textarea {
+  /* margin: auto; */
+  display: block;
+  width: 100%;
+  height: 15vh;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  resize: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+button {
+  background-color: var(--background-color);
+  border: none;
+  margin: 1rem 0rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  display: block;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+#output-txt {
+  /* box-sizing: border-box; */
+  width: 100%;
+  height: 15vh;
+  /* max-height: 20vh; */
+  overflow: scroll;
+  border: 1px solid var(--font-color);
+  padding: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+#output-txt::-webkit-scrollbar {
+  display: none;
+}
+
+footer {
+  /* position: fixed; */
+  /* bottom: 0; */
+  /* width: 100%; */
+  padding: 1rem;
+  margin-top: 1.9rem;
+  background-color: var(--background-color);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+footer p {
+  width: 50%;
+  margin: auto;
+  font-size: 1.2rem;
+}
