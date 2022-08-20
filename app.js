@@ -14,6 +14,7 @@ function errorHandler(error) {
   console.log("Error: " + error);
 }
 
+//making api call
 function fetchOutput(inputText) {
   fetch(getUrl(inputText))
     .then((response) => response.json())
@@ -33,18 +34,10 @@ function clickHandler() {
     return;
   }
 
-  console.log("dsdsds");
   fetchOutput(inputText);
-
-  //   fetch(getUrl(inputText))
-  //     .then((response) => response.json())
-  //     .then((json) => {
-  //       //   console.log(json);
-  //       translatedOutput.innerText = json.contents.translated;
-  //     })
-  //     .catch(errorHandler);
 }
 
+//keydown event handler
 function handleEnter(e) {
   if (e.key === "Enter") {
     fetchOutput(e.target.value);
@@ -53,5 +46,5 @@ function handleEnter(e) {
 
 //attaching onclick eventlistener
 translateBtn.addEventListener("click", clickHandler);
-
+//Enter press event handler
 input.addEventListener("keydown", handleEnter);
