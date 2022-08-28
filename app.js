@@ -10,8 +10,8 @@ function getUrl(text) {
 
 //erro handler
 function errorHandler(error) {
-  alert("Something is wrong! Please try after some time.");
-  console.log("Error: " + error);
+  alert("You exceeded per hour limit, Please try again after 1hr");
+  // console.log("Error: " + error);
 }
 
 //making api call
