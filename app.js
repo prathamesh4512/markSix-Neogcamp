@@ -11,7 +11,6 @@ function getUrl(text) {
 //erro handler
 function errorHandler(error) {
   alert("You exceeded per hour limit, Please try again after 1hr");
-  // console.log("Error: " + error);
 }
 
 //making api call
